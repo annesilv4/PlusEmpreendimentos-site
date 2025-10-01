@@ -1,0 +1,32 @@
+/* RESET PAGE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header" "header" "header"
+    "main" "main" "main"
+    "footer" "footer" "footer";
+}
+
+/* HEADER */
+.header {
+  background-color: #e4e4e4;
+  padding: 1% 10%;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 27%;
+}
+
+.logo__img {
+  width: 100%;
+}
