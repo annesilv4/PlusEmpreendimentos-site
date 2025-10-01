@@ -78,3 +78,12 @@ body {
 .nav__link:hover::after {
   width: 100%;
 }
+
+/* CONTÉUDO PRINCIPAL */
+.main__container {
+  grid-area: main;
+}
+
+.section__home {
+  height: 85vh;
+}
