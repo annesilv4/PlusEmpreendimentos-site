@@ -22,6 +22,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+  position: fixed; /* fixa no topo */
+  top: 0; /* gruda no topo */
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 /* DIV ONDE A LOGO ESTÁ INSERIDA */
@@ -84,6 +89,50 @@ body {
   grid-area: main;
 }
 
+/* HOME */
 .section__home {
-  height: 85vh;
+  height: 100vh;
+  background: url("../img/bg-home.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.home__bg__color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de sobreposição */
+  z-index: 1;
+}
+
+.home__container {
+  border-radius: 15px;
+  background-color: rgba(228, 228, 228, 0.5);
+  position: relative;
+  width: 45%;
+  height: 15%;
+  padding: 2% 5%;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home__title {
+  color: #000;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home__subtitle {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-top: 1%;
 }
