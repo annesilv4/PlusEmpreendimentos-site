@@ -136,3 +136,32 @@ body {
   font-weight: 500;
   margin-top: 1%;
 }
+
+/* ABOUT */
+.section__about {
+  height: 100vh;
+  background-color: #b1b1b1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 5% 12%;
+  gap: 5%;
+}
+
+.img__container {
+  border-radius: 15px;
+  width: 90%;
+}
+
+.about__title {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+  color: #000;
+}
+
+.about__description {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #000;
+  line-height: 1.6;
+}
