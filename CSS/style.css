@@ -321,3 +321,93 @@ body {
   background-color: #d9433e;
   transition: 0.3s;
 }
+
+/* SEÇÃO CONTATO */
+.section__contato {
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 12%;
+}
+
+.contato__container {
+  width: 100%;
+  border-radius: 15px;
+  padding: 5% 7%;
+}
+
+.contato__title {
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center;
+}
+
+.contato__description {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 4%;
+}
+
+.form__contato {
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+
+.campo__nome,
+.campo__assunto {
+  padding: 1.5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.campo__nome input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.campo__assunto input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.campo__mensagem {
+  padding: 1.5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 150px;
+}
+
+.campo__mensagem textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn__contato--form {
+  padding: 1.5% 3%;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn__contato--form:hover {
+  background-color: #d9433e;
+  transition: 0.3s;
+}
