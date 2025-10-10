@@ -168,11 +168,12 @@ body {
 
 /* SERVIÇO */
 .section__service {
-  height: 80vh;
+  height: 130vh;
 }
 
 .container__service {
-  padding: 5% 12%;
+  width: 100%;
+  padding: 7.4% 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,6 +238,86 @@ body {
 }
 
 .btn__contato:hover {
+  background-color: #d9433e;
+  transition: 0.3s;
+}
+
+/* FORNECIMENTO */
+.section__fornecimento {
+  height: 100vh;
+  background-color: #b1b1b1;
+}
+
+.container__fornecimento {
+  width: 100%;
+  padding: 7.4% 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+}
+
+.fornecimento__title {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.fornecimento__subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 2.5%;
+}
+
+.fornecimento__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  width: 75%;
+}
+
+.card__fornecimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e4e4e4;
+  border-radius: 15px;
+  padding: 8% 5%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fornecimento__img {
+  width: 35%;
+  margin-bottom: 2%;
+}
+
+.fornecimento__title--item {
+  font-size: 1.2rem;
+  margin-bottom: 1%;
+  color: #000;
+}
+
+.fornecimento__description {
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 1.4;
+}
+
+.fornecimento__btn {
+  padding: 2% 3%;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.fornecimento__btn:hover {
   background-color: #d9433e;
   transition: 0.3s;
 }
