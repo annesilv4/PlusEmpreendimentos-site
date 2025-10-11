@@ -411,3 +411,151 @@ body {
   background-color: #d9433e;
   transition: 0.3s;
 }
+
+/* FOOTER */
+.footer {
+  background-color: #e4e4e4;
+  padding: 2% 5%;
+  grid-area: footer;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container__footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 2%;
+}
+
+.footer__logo {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.footer__links {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 3%;
+}
+
+.links__title {
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.footer__item {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.footer__link:hover {
+  color: #f5524c;
+  transition: 0.3s;
+}
+
+.footer__contato {
+  text-align: left;
+}
+
+.contact__title {
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.contact__number {
+  margin-bottom: 2%;
+}
+
+.contact__proprietario {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 2%;
+}
+
+.contact__proprietario:hover {
+  color: #f5524c;
+  transition: 0.3s;
+}
+
+.contact__funcionario {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 2%;
+}
+
+.contact__funcionario:hover {
+  color: #f5524c;
+  transition: 0.3s;
+}
+
+.social__midias {
+  display: flex;
+  gap: 3%;
+  margin-top: 5%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  gap: 3%;
+}
+
+.social__item {
+  font-size: 1.5rem;
+}
+
+.social__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.social__link:hover {
+  color: #f5524c;
+  transition: 0.3s;
+}
+
+.footer__localizar {
+  text-align: left;
+}
+
+.localizar__title {
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.localizar__text {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 2%;
+}
+
+.localizar__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.localizar__link:hover {
+  color: #f5524c;
+  transition: 0.3s;
+}
