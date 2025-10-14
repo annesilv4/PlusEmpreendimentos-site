@@ -51,6 +51,7 @@ service.forEach((services) => {
 
 // ----------------------------------------------------------------------------------------------------------------------------
 
+// div onde estão inseridos os cards de fornecimento
 const fornecimentoCards = document.querySelector(".fornecimento__cards");
 
 const fornecimento = [
@@ -91,6 +92,7 @@ const fornecimento = [
   },
 ];
 
+// Automatizando a criação dos cards de fornecimento
 fornecimento.forEach((fornecimentos) => {
   const card = document.createElement("div");
   card.classList.add("card__fornecimento");
