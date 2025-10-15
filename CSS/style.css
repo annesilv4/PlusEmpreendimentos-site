@@ -397,6 +397,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.campo__nome input,
+.campo__mensagem textarea,
+.campo__assunto input {
+  margin-top: 1%;
+}
+
 .btn__contato--form {
   padding: 1.5% 3%;
   background-color: #000000;
