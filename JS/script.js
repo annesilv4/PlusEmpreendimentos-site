@@ -174,3 +174,32 @@ document
   .forEach((btn) =>
     adicionarEventCard(btn, ".card__fornecimento", ".fornecimento__title--item")
   );
+
+// --------------------------------------------------------------------------------------------------------------
+
+// --------------------------------------- FORMATANDO A MENSAGEM DE ENTRAR EM CONTATO ---------------------------------------
+
+const btnEnviar = document.getElementById("btn__submit");
+
+btnEnviar.addEventListener("click", () => {
+  // PEGANDO VALORES DOS INPUTS, TEXTAREA E SELECT
+  const cliente = document.getElementById("nome").value.trim();
+  const assunto = document.getElementById("assunto").value.trim();
+  const message = document.getElementById("mensagem").value.trim();
+  const destino = document.getElementById("destinatario").value;
+
+  // FORMATANDO A MENSAGEM
+  const mensagem = `
+  Entrando em contato através do site!
+
+  Cliente: ${cliente}
+  Assunto: ${assunto}
+  Descrição: ${message}
+  `;
+
+  // Abrir WhatsApp Web com a mensagem
+  window.open(
+    `https://wa.me/${destino}?text=${encodeURIComponent(mensagem)}`,
+    "_blank"
+  );
+});
