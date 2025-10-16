@@ -1,4 +1,6 @@
-// div onde estão inseridos os cards de serviço
+// --------------------------------------- CRIAÇÃO DE CARDS ---------------------------------------
+
+// CARDS DE SERVIÇO
 const serviceCards = document.querySelector(".service__cards");
 
 const service = [
@@ -28,7 +30,6 @@ const service = [
   },
 ];
 
-// Automatizando a criação dos cards de serviço
 service.forEach((services) => {
   const card = document.createElement("div");
   card.classList.add("card__service");
@@ -43,15 +44,13 @@ service.forEach((services) => {
             <p class="service__description">
                 ${services.description}
             </p>
-            <a href="" class="btn__contato">Faça um orçamento</a>
+            <a href="#" class="btn__contato">Faça um orçamento</a>
     `;
 
   serviceCards.appendChild(card);
 });
 
-// ----------------------------------------------------------------------------------------------------------------------------
-
-// div onde estão inseridos os cards de fornecimento
+// CARDS DE FORNECIMENTO
 const fornecimentoCards = document.querySelector(".fornecimento__cards");
 
 const fornecimento = [
@@ -92,7 +91,6 @@ const fornecimento = [
   },
 ];
 
-// Automatizando a criação dos cards de fornecimento
 fornecimento.forEach((fornecimentos) => {
   const card = document.createElement("div");
   card.classList.add("card__fornecimento");
@@ -107,10 +105,72 @@ fornecimento.forEach((fornecimentos) => {
       <p class="fornecimento__description">
         ${fornecimentos.description}
       </p>
-      <a href="" class="fornecimento__btn"
+      <a href="#" class="fornecimento__btn"
         >Entrar em contato para fornecimento</a
       >
   `;
 
   fornecimentoCards.appendChild(card);
 });
+
+// --------------------------------------- FUNÇÃO PARA EVENTOS ---------------------------------------
+
+const campoAssunto = document.getElementById("assunto");
+
+const btnMap = new Map();
+
+function adicionarEventCard(btn, cardSelector, titleSelector) {
+  const card = btn.closest(cardSelector);
+  const title = card.querySelector(titleSelector).textContent;
+
+  btnMap.set(title, btn);
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (btn.disabled) return;
+
+    if (campoAssunto.value) {
+      campoAssunto.value += ", " + title;
+    } else {
+      campoAssunto.value = title;
+    }
+
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+
+    campoAssunto.focus();
+
+    btn.disabled = true;
+    btn.classList.add("btn--disabled");
+  });
+}
+
+campoAssunto.addEventListener("input", () => {
+  // Pegar todos os títulos do campo
+  const valores = campoAssunto.value.split(",").map((v) => v.trim());
+
+  // Para cada título registrado, habilitar/desabilitar o botão
+  btnMap.forEach((btn, titulo) => {
+    if (valores.includes(titulo)) {
+      btn.disabled = true;
+      btn.classList.add("btn--disabled");
+    } else {
+      btn.disabled = false;
+      btn.classList.remove("btn--disabled");
+    }
+  });
+});
+
+// --------------------------------------- ADICIONANDO EVENTO NOS BOTÕES ---------------------------------------
+
+// SERVIÇOS
+document
+  .querySelectorAll(".btn__contato")
+  .forEach((btn) => adicionarEventCard(btn, ".card__service", ".card__title"));
+
+// FORNECIMENTO
+document
+  .querySelectorAll(".fornecimento__btn")
+  .forEach((btn) =>
+    adicionarEventCard(btn, ".card__fornecimento", ".fornecimento__title--item")
+  );
