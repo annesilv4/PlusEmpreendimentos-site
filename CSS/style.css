@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* RESET PAGE */
 * {
   padding: 0;
@@ -8,10 +9,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
-  grid-template-areas:
-    "header" "header" "header"
-    "main" "main" "main"
-    "footer" "footer" "footer";
+  grid-template-areas: "header" "header" "header" "main" "main" "main" "footer" "footer" "footer";
 }
 
 /* HEADER */
@@ -57,7 +55,7 @@ body {
 .nav__link {
   text-decoration: none;
   position: relative;
-  color: #000;
+  color: #000000;
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -123,14 +121,14 @@ body {
 }
 
 .home__title {
-  color: #000;
+  color: #000000;
   font-size: 2.5rem;
   margin-bottom: 1%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .home__subtitle {
-  color: #000;
+  color: #000000;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -156,13 +154,13 @@ body {
 .about__title {
   font-size: 2.5rem;
   margin-bottom: 2%;
-  color: #000;
+  color: #000000;
 }
 
 .about__description {
   font-size: 1.2rem;
   text-align: justify;
-  color: #000;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -175,20 +173,20 @@ body {
   width: 100%;
   padding: 7.4% 12%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   gap: 5%;
 }
 
 .service__title {
   font-size: 2.5rem;
-  color: #000;
+  color: #000000;
 }
 
 .service__subtitle {
   font-size: 1.2rem;
   text-align: center;
-  color: #000;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 2.5%;
 }
@@ -216,12 +214,12 @@ body {
 .card__title {
   font-size: 1.5rem;
   margin-bottom: 1%;
-  color: #000;
+  color: #000000;
 }
 
 .service__description {
   font-size: 1rem;
-  color: #000;
+  color: #000000;
   line-height: 1.4;
   margin-bottom: 4%;
 }
@@ -229,7 +227,7 @@ body {
 .btn__contato {
   padding: 1% 3%;
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -257,20 +255,20 @@ body {
   width: 100%;
   padding: 7.4% 12%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   gap: 5%;
 }
 
 .fornecimento__title {
   font-size: 2.5rem;
-  color: #000;
+  color: #000000;
 }
 
 .fornecimento__subtitle {
   font-size: 1.2rem;
   text-align: center;
-  color: #000;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 2.5%;
 }
@@ -284,9 +282,9 @@ body {
 
 .card__fornecimento {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   background-color: #e4e4e4;
   border-radius: 15px;
   padding: 8% 5%;
@@ -302,19 +300,19 @@ body {
 .fornecimento__title--item {
   font-size: 1.2rem;
   margin-bottom: 1%;
-  color: #000;
+  color: #000000;
 }
 
 .fornecimento__description {
   font-size: 0.9rem;
-  color: #000;
+  color: #000000;
   line-height: 1.4;
 }
 
 .fornecimento__btn {
   padding: 2% 3%;
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -332,8 +330,8 @@ body {
   height: 100vh;
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 5% 12%;
 }
 
@@ -345,14 +343,14 @@ body {
 
 .contato__title {
   font-size: 2.5rem;
-  color: #000;
+  color: #000000;
   text-align: center;
 }
 
 .contato__description {
   font-size: 1.2rem;
   text-align: center;
-  color: #000;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 4%;
 }
@@ -413,7 +411,7 @@ body {
 .campo__nome input,
 .campo__mensagem textarea,
 .campo__assunto input {
-  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 /* Estilizando o select */
@@ -424,7 +422,7 @@ body {
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 16px;
   color: #333;
   appearance: none; /* remove estilo padrão do navegador */
@@ -446,13 +444,13 @@ body {
   padding: 10px;
   font-size: 16px;
   color: #333;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .btn__contato--form {
   padding: 1.5% 3%;
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -471,7 +469,7 @@ body {
   grid-area: footer;
   text-align: center;
   font-size: 0.9rem;
-  color: #000;
+  color: #000000;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -509,13 +507,13 @@ body {
 
 .footer__item {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-size: 0.9rem;
 }
 
 .footer__link {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-size: 0.9rem;
 }
 
@@ -538,7 +536,7 @@ body {
 }
 
 .contact__proprietario {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   margin-bottom: 2%;
 }
@@ -549,7 +547,7 @@ body {
 }
 
 .contact__funcionario {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   margin-bottom: 2%;
 }
@@ -561,10 +559,10 @@ body {
 
 .social__midias {
   display: flex;
+  align-items: center;
   gap: 3%;
   margin-top: 5%;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .social__list {
@@ -578,7 +576,7 @@ body {
 }
 
 .social__link {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -597,13 +595,13 @@ body {
 }
 
 .localizar__text {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   margin-bottom: 2%;
 }
 
 .localizar__link {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -611,3 +609,5 @@ body {
   color: #f5524c;
   transition: 0.3s;
 }
+
+/*# sourceMappingURL=style.css.map */
