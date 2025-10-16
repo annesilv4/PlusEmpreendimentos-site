@@ -242,6 +242,11 @@ body {
   transition: 0.3s;
 }
 
+.btn--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 /* FORNECIMENTO */
 .section__fornecimento {
   height: 100vh;
