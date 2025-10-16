@@ -364,11 +364,19 @@ body {
 }
 
 .campo__nome,
-.campo__assunto {
+.campo__assunto,
+.campo__destino {
   padding: 1.5%;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+.nome__input,
+.assunto__input,
+.area__mensagem,
+.select__destino {
+  font-weight: bold;
 }
 
 .campo__nome input {
@@ -406,6 +414,39 @@ body {
 .campo__mensagem textarea,
 .campo__assunto input {
   margin-top: 1%;
+}
+
+/* Estilizando o select */
+.select__destinatario {
+  width: 100%;
+  text-align: center;
+  max-width: 300px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  appearance: none; /* remove estilo padrão do navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Quando focado */
+.select__destinatario:focus {
+  outline: none;
+  border-color: #ff3b3f; /* cor de destaque */
+  box-shadow: 0 0 5px rgba(255, 59, 63, 0.5);
+}
+
+/* Estilizando as opções (somente cores e fontes, não é possível muita customização) */
+.select__destinatario option {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
 }
 
 .btn__contato--form {
