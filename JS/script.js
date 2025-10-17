@@ -203,3 +203,33 @@ btnEnviar.addEventListener("click", () => {
     "_blank"
   );
 });
+
+const menuBtn = document.querySelector(".header__menu_hamburguer");
+const nav = document.querySelector(".header__nav");
+const overlay = document.querySelector(".overlay");
+const menuClose = document.querySelector(".menu__close i");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.add("nav--active");
+  overlay.style.display = "flex";
+  menuBtn.style.display = "none";
+});
+
+overlay.addEventListener("click", closeMenu);
+menuClose.addEventListener("click", closeMenu);
+
+function closeMenu() {
+  nav.classList.remove("nav--active");
+  overlay.style.display = "none";
+  menuBtn.style.display = "flex";
+}
+
+// 👇 Este trecho resolve seu problema
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 600) {
+    // limpa qualquer estilo inline aplicado pelo JS
+    menuBtn.style.display = "";
+    overlay.style.display = "";
+    nav.classList.remove("nav--active");
+  }
+});
