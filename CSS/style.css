@@ -699,6 +699,39 @@ body {
   .nav__link::after {
     display: none;
   }
+  /* HOME */
+  .home__container {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home__title {
+    font-size: 1.4rem;
+  }
+  .home__subtitle {
+    font-size: 0.9rem;
+  }
+  /* ABOUT */
+  .section__about {
+    height: 72vh;
+    gap: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about__img {
+    margin-top: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .about__subtitle {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
