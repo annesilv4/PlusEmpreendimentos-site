@@ -204,6 +204,7 @@ btnEnviar.addEventListener("click", () => {
   );
 });
 
+// CONFIGURANDO O ABRIR E FECHAR DO MENU
 const menuBtn = document.querySelector(".header__menu_hamburguer");
 const nav = document.querySelector(".header__nav");
 const overlay = document.querySelector(".overlay");
@@ -224,10 +225,9 @@ function closeMenu() {
   menuBtn.style.display = "flex";
 }
 
-// 👇 Este trecho resolve seu problema
+// EVITANDO QUE O MENU HAMBURGUER APAREÇA EM TELAS > 600px
 window.addEventListener("resize", () => {
   if (window.innerWidth > 600) {
-    // limpa qualquer estilo inline aplicado pelo JS
     menuBtn.style.display = "";
     overlay.style.display = "";
     nav.classList.remove("nav--active");
