@@ -1452,7 +1452,7 @@ body {
     z-index: 10;
   }
   .header__logo {
-    width: 55%;
+    width: 45%;
   }
   .header__menu_hamburguer {
     display: flex;
