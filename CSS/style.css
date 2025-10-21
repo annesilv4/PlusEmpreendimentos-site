@@ -2220,13 +2220,6 @@ body {
     font-size: 18px;
   }
   /* ABOUT */
-  .section__about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px; /* aumenta o espaço entre imagem e texto */
-    padding: 60px 125px;
-  }
   .img__container {
     width: 420px;
     flex-shrink: 0; /* impede a imagem de encolher demais */
@@ -2533,6 +2526,168 @@ body {
   .localizar__text,
   .localizar__link {
     font-size: 13px;
+  }
+}
+/* DESKTOP GRANDE */
+@media (min-width: 1441px) and (max-width: 1865px) {
+  /* Header fixo */
+  .header {
+    position: fixed; /* cria stacking context para overlay e nav */
+    z-index: 10;
+  }
+  .header__logo {
+    width: 30%;
+  }
+  /* HOME */
+  .home__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home__title {
+    font-size: 28px;
+  }
+  .home__subtitle {
+    font-size: 18px;
+  }
+  /* ABOUT */
+  .about__title {
+    font-size: 28px;
+  }
+  .about__description {
+    font-size: 18px;
+  }
+  /* SERVIÇO */
+  .section__service {
+    height: auto; /* altura ajustável ao conteúdo */
+    padding: 60px 60px;
+  }
+  .container__service {
+    width: 100%;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service__title {
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+  }
+  .service__subtitle {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .card__service {
+    background-color: #e4e4e4;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .service__img {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  .card__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  .service__description {
+    font-size: 15px;
+    color: #000000;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .btn__contato {
+    padding: 8px 22px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .btn__contato:hover {
+    background-color: #d9433e;
+    transition: 0.3s;
+  }
+  .btn--disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  /* FORNECIMENTO */
+  .section__fornecimento {
+    height: auto; /* altura se ajusta ao conteúdo */
+    padding: 60px 60px;
+    background-color: #b1b1b1;
+  }
+  .container__fornecimento {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fornecimento__title {
+    font-size: 28px;
+    text-align: center;
+    color: #000000;
+  }
+  .fornecimento__subtitle {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .card__fornecimento {
+    padding: 30px 20px;
+    border-radius: 15px;
+    background-color: #e4e4e4;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .fornecimento__img {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  .fornecimento__title--item {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  .fornecimento__description {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+  .fornecimento__btn {
+    padding: 10px 25px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .fornecimento__btn:hover {
+    background-color: #d9433e;
+    transition: 0.3s;
+  }
+  /* FOOTER */
+  .localizar__title {
+    margin-top: -34px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 }
 
